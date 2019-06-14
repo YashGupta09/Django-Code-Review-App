@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,5 +125,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATIC_DIR, ]
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+CONFIG_FILE_PATH = os.path.join(BASE_DIR, 'app_cmp/config.py')
 
 path = "C:\\Users\\tyagi\\Desktop\\Language\\Python\\Algorithm\\"
